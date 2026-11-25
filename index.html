@@ -29,6 +29,15 @@
       rel="stylesheet"
     />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="lightbox/dist/css/lightbox.css" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -68,21 +77,105 @@
     <div class="hero-1">
       <div class="container">
         <div class="box-hero-1">
-          <div class="box1"></div>
+          <div class="box1">
+            <img src="img/hero-1.png" alt="hero" />
+          </div>
           <div class="box2">
             <h1>Bimbel Matematika SD Khusus Perempuan</h1>
             <h3>#learningbydoing #cerdasberakhlak</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic,
-              fugiat.
+              fugiat. Lorem ipsum dolor sit amet.
             </p>
-            <button>Daftar Sekarang ></button>
+            <button class="btn1">Daftar Sekarang ></button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="about"></div>
+    <div class="program">
+      <div class="container">
+        <div class="box-program">
+          <div class="judul-program">
+            <h1>Program Bimbel</h1>
+            <h3>Bimbel Matematika Reguler</h3>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/kelas1.png" alt="kelas 1" />
+                  <button>Daftar</button>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/kelas2.png" alt="kelas 2" />
+                  <button>Daftar</button>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/kelas3.png" alt="kelas 3" />
+                  <button>Daftar</button>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/kelas4.png" alt="kelas 4" />
+                  <button>Daftar</button>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/kelas5.png" alt="kelas 5" />
+                  <button>Daftar</button>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/kelas6.png" alt="kelas 6" />
+                  <button>Daftar ></button>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="container">
+        <div class="box-gallery">
+          <div class="box1">
+            <h1>Galeri RuBelKa</h1>
+          </div>
+          <div class="box2">
+            <a href="img/foto1.jpeg" data-lightbox="gallery">
+              <img src="img/foto1.jpeg" alt="" />
+              <div class="bg-img">Lihat Gambar</div>
+            </a>
+            <a href="img/foto2.jpeg" data-lightbox="gallery">
+              <img src="img/foto2.jpeg" alt="" />
+              <div class="bg-img">Lihat Gambar</div>
+            </a>
+            <a href="img/foto3.jpeg" data-lightbox="gallery">
+              <img src="img/foto3.jpeg" alt="" />
+              <div class="bg-img">Lihat Gambar</div>
+            </a>
+            <a href="img/foto4.jpeg" data-lightbox="gallery">
+              <img src="img/foto4.jpeg" alt="" />
+              <div class="bg-img">Lihat Gambar</div>
+            </a>
+            <a href="img/foto5.jpeg" data-lightbox="gallery">
+              <img src="img/foto5.jpeg" alt="" />
+              <div class="bg-img">Lihat Gambar</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>
