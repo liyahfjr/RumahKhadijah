@@ -442,10 +442,10 @@ body {
     font-size: 25px;
   }
 
-  .program .box-program .swiper-container {
-    width: 80%;
-    /* padding: 0 50px 50px; */
-  }
+  /* .program .box-program .swiper-container {
+    width: 100%;
+    padding: 0 50px 50px;
+  } */
 
   .gallery .box-gallery .box1 h1 {
     font-size: 25px;
@@ -484,25 +484,25 @@ body {
     font-size: 16px;
   }
 
-  .program .box-program .swiper-container {
+  /* .program .box-program .swiper-container {
     width: 50%;
     padding: 0 40px 40px;
-  }
+  } */
 
-  .program .swiper-container .swiper-button-next,
+  /* .program .swiper-container .swiper-button-next,
   .program .swiper-container .swiper-button-prev {
-    top: 40%;
+    top: 45%;
     --swiper-navigation-size: 35px;
-  }
+  } */
 
-  .program .swiper-pagination {
+  /* .program .swiper-pagination {
     text-align: center;
   }
 
   .program .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
-  }
+  } */
 
   .gallery .box-gallery .box1 h1 {
     font-size: 23px;
@@ -537,12 +537,12 @@ body {
     font-size: 14px;
   }
 
-  .program .box-program .swiper-container {
+  /* .program .box-program .swiper-container {
     width: 75%;
     padding: 0 40px 30px 40px;
-  }
+  } */
 
-  .program .swiper-container .swiper-button-next,
+  /* .program .swiper-container .swiper-button-next,
   .program .swiper-container .swiper-button-prev {
     top: 45%;
     --swiper-navigation-size: 30px;
@@ -555,7 +555,7 @@ body {
   .program .box-program .swiper .swiper-wrapper .swiper-slide button {
     padding: 7px 35px;
     font-size: 12px;
-  }
+  } */
 
   .gallery .box-gallery .box1 h1 {
     font-size: 21px;
@@ -596,18 +596,22 @@ body {
   }
 
   .program .box-program .swiper-container {
-    width: 85%;
-    padding: 0 30px 30px 30px;
+    /* width: 75%; */
+    padding: 0 40px 35px 40px;
   }
 
   .program .swiper-container .swiper-button-next,
   .program .swiper-container .swiper-button-prev {
-    top: 45%;
-    --swiper-navigation-size: 20px;
+    /* top: 45%; */
+    --swiper-navigation-size: 30px;
   }
   .program .swiper-pagination-bullet {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .program .box-program .swiper .swiper-wrapper .swiper-slide button {
+    padding: 7px 35px;
   }
 
   .gallery .box-gallery .box1 h1 {
