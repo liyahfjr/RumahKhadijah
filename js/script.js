@@ -122,3 +122,15 @@ var swiper = new Swiper(".swiper", {
   // Enable debugger
   debugger: true,
 });
+
+const btnDaftar = document.querySelector("#btn-daftar");
+
+btnDaftar.addEventListener("click", () => {
+  const pesan = "Halo, saya ingin menanyakan soal bimbel.";
+
+  const nomorWhatsApp = "6281287635841";
+
+  const url = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
+
+  window.open(url, "_blank");
+});

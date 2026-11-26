@@ -82,19 +82,19 @@ body {
   border-radius: 7px;
 }
 
-.navbar .box-navbar .navigation ul li:nth-child(6) a:hover {
+/* .navbar .box-navbar .navigation ul li:nth-child(6) a:hover {
   padding: 10px 15px 10px 15px;
   border: none;
   font-weight: bold;
   background-color: #594936;
   color: #e8b86d;
   border-radius: 7px;
-}
+} */
 
-.navbar.scrolling-active .box-navbar .navigation ul li:nth-child(6) a:hover {
+/* .navbar.scrolling-active .box-navbar .navigation ul li:nth-child(6) a:hover {
   background-color: #f9f7ea;
   color: #e8b86d;
-}
+} */
 
 .navbar .box-navbar .navigation ul li a {
   text-decoration: none;
@@ -126,9 +126,11 @@ body {
 
 .hero-1 {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
+  margin-top: 300px;
+  margin-bottom: 300px;
 }
 
 .hero-1 .box-hero-1 {
@@ -184,12 +186,12 @@ body {
 
 .program {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  margin-top: 70px;
+  margin-bottom: 300px;
   background-color: #e8b86d;
-  padding: 30px;
+  padding: 70px 0;
 }
 
 .program .box-program .judul-program {
@@ -280,12 +282,18 @@ body {
   background-color: #594936;
 }
 
+.tutor {
+  width: 100%;
+  min-height: auto;
+  margin-bottom: 300px;
+}
+
 .gallery {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   display: grid;
   place-items: center;
-  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
 .gallery .box-gallery {
@@ -307,15 +315,15 @@ body {
 
 .gallery .box-gallery .box2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  /* gap: 10px; */
   justify-items: center;
 }
 
 .gallery .box-gallery .box2 a {
   position: relative;
   display: block;
-  width: 80%;
+  width: 95%;
 }
 
 .gallery .box-gallery .box2 a img {
@@ -337,7 +345,7 @@ body {
   transform: scale(0);
   transform-origin: bottom;
   opacity: 0;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .gallery .box-gallery .box2 a:hover .bg-img {
@@ -401,8 +409,8 @@ body {
   }
 
   .hero-1 {
-    min-height: auto;
-    padding-top: 70px;
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
 
   .hero-1 .box-hero-1 {
@@ -434,8 +442,8 @@ body {
   }
 
   .program {
-    margin-top: 95px;
-    padding: 40px;
+    padding: 60px 0;
+    margin-bottom: 200px;
   }
 
   .program .box-program .judul-program h1 {
@@ -447,6 +455,14 @@ body {
     padding: 0 50px 50px;
   } */
 
+  .tutor {
+    margin-bottom: 200px;
+  }
+
+  .gallery {
+    margin-bottom: 200px;
+  }
+
   .gallery .box-gallery .box1 h1 {
     font-size: 25px;
   }
@@ -454,7 +470,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero-1 {
-    padding-top: 70px;
+    margin: 150px 0;
   }
 
   .hero-1 .box-hero-1 .box1 img {
@@ -474,12 +490,14 @@ body {
   }
 
   .program {
-    min-height: auto;
+    padding: 70px;
+    margin-bottom: 150px;
   }
 
-  .program .box-program .judul-program h1 {
+  /* .program .box-program .judul-program h1 {
     font-size: 23px;
-  }
+  } */
+
   .program .box-program .judul-program h3 {
     font-size: 16px;
   }
@@ -504,14 +522,28 @@ body {
     height: 7px;
   } */
 
-  .gallery .box-gallery .box1 h1 {
+  .tutor {
+    margin-bottom: 150px;
+  }
+
+  .gallery {
+    margin-bottom: 150px;
+  }
+
+  /* .gallery .box-gallery .box1 h1 {
     font-size: 23px;
+  } */
+
+  .gallery .box-gallery .box2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hero-1 {
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    margin: 120px 0;
   }
 
   .hero-1 .box-hero-1 .box1 img {
@@ -528,6 +560,11 @@ body {
 
   .hero-1 .box-hero-1 .box2 p {
     font-size: 12px;
+  }
+
+  .program {
+    padding: 70px 0;
+    margin-bottom: 120px;
   }
 
   .program .box-program .judul-program h1 {
@@ -557,15 +594,26 @@ body {
     font-size: 12px;
   } */
 
+  .tutor {
+    margin-bottom: 120px;
+  }
+
+  .gallery {
+    margin-bottom: 120px;
+  }
+
   .gallery .box-gallery .box1 h1 {
     font-size: 21px;
+  }
+
+  .gallery .box-gallery .box2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media screen and (max-width: 370px) {
   .hero-1 {
-    /* place-items: start center; */
-    padding-top: 50px;
+    margin: 100px 0;
   }
 
   .hero-1 .box-hero-1 .box2 {
@@ -584,38 +632,51 @@ body {
     font-size: 10px;
   }
 
+  .program {
+    margin: 100px 0;
+    padding: 60px 0;
+  }
+
   .program .box-program .judul-program {
     margin-bottom: 40px;
   }
 
   .program .box-program .judul-program h1 {
-    font-size: 19px;
+    font-size: 18px;
   }
   .program .box-program .judul-program h3 {
     font-size: 12px;
   }
 
-  .program .box-program .swiper-container {
+  /* .program .box-program .swiper-container {
     /* width: 75%; */
-    padding: 0 40px 35px 40px;
-  }
+  /* padding: 0 40px 35px 40px; */
+  /* }*/
 
-  .program .swiper-container .swiper-button-next,
+  /* .program .swiper-container .swiper-button-next,
   .program .swiper-container .swiper-button-prev {
     /* top: 45%; */
-    --swiper-navigation-size: 30px;
-  }
+  /* --swiper-navigation-size: 30px; */
+  /* }
   .program .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
-  }
+  }  */
 
   .program .box-program .swiper .swiper-wrapper .swiper-slide button {
     padding: 7px 35px;
   }
 
+  .tutor {
+    margin-bottom: 100px;
+  }
+
+  .gallery {
+    margin-bottom: 100px;
+  }
+
   .gallery .box-gallery .box1 h1 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .lightbox {
